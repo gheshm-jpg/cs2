@@ -24,5 +24,5 @@ int main(){
 	total= round(price1*sales_tax) + round(price2*sales_tax) + round(price3*sales_tax);
 	//outputs total
 	cout << "Total: " << total << endl;	
-     return 0;
+    return 0;
 }
