@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // Create a variable holding 100 and output it
-    int harmonica = 100
+    int harmonica = 100;
     cout << "harmonica: << harmonica+ << endl;
     
     // Compute the fifth harmonic number
