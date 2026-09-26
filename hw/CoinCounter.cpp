@@ -15,6 +15,7 @@ int main() {
     cin >> number_of_pennies >> number_of_nickels >> number_of_dimes >> number_of_quarters;
 
     //use singular names for one coin and plural names for all other counts to ensure proper grammar
+
     if (number_of_pennies == 1) {
         cout << "You have 1 penny,";
     } else {
