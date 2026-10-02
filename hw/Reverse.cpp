@@ -9,6 +9,7 @@ int main() {
 
     for (int i = 0; i < 100; i++) {
         if (array[i] == '\0') {
+            // k is the next index to fill in reversedarray
             int k = 0;
 
             // start before the null terminator so it is not copied first
