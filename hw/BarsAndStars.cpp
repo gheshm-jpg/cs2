@@ -12,20 +12,24 @@ int main() {
     return 0;
 }
 
-void count_stars(char input[], int* a, int* b, int* c){
-*a = 0;
-*b = 0;
-*c = 0;
-    for (int i=0; input[i]!='|' ;i++){
-       *a+=1;
-       }
-    for (int i=*a+1; input[i]!='|' ;i++){
-       *b+=1;
-       }
-    for (int i=*a+*b+2; input[i]!='\0' ;i++){
-       *c+=1;
-       }
+void count_stars(char input[], int* a, int* b, int* c) {
+    // initialize the three counters
+    *a = 0;
+    *b = 0;
+    *c = 0;
 
+    // count stars before the first separator
+    for (int i = 0; input[i] != '|'; i++) {
+        *a += 1;
+    }
 
+    // count stars between the two separators
+    for (int i = *a + 1; input[i] != '|'; i++) {
+        *b += 1;
+    }
 
+    // count stars after the second separator
+    for (int i = *a + *b + 2; input[i] != '\0'; i++) {
+        *c += 1;
+    }
 }
