@@ -3,8 +3,10 @@
 #include <iostream>
 #include <string>
 
-Dog::Dog(string n) : Pet(n)  {
+using namespace std;
+
+Dog::Dog(string name) : Pet(name) {
 }
 void Dog::sound(){
-cout << name << " barked" << endl;
-}
+    cout << name << " barked" << endl;
+    }
